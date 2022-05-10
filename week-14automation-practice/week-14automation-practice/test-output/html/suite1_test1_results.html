@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Visa conformation Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Visa conformation Test</h1>
+<p>
+  Test duration: 510.057s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.CreateAccountPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserShouldCreateAccountSuccessfully
+      </td>
+  <td class="duration">
+    31.494s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email nehamittal1@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //input[@id=&apos;email_create&apos;]]&lt;br&gt;<br />
+                                Clicking on create anAccountBtn [[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //button[@id=&apos;SubmitCreate&apos;]]&lt;br&gt;<br />
+                                Enter emailneha to email field [[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //input[@id=&apos;customer_firstname&apos;]]&lt;br&gt;<br />
+                                Enter last name mital to email field [[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //input[@id=&apos;customer_lastname&apos;]]&lt;br&gt;<br />
+                                Enter password prime123 to email field [[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                selecting day12[[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; xpath: //select[@id=&apos;days&apos;]]&lt;br&gt;<br />
+                                selecting monthJanuary[[ChromeDriver: chrome on WINDOWS (4ec9a20938f03fff0b8f64c3aaeb0f1b)] -&gt; id: months]&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: January<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-TMPB3MR&apos;, ip: &apos;192.168.1.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;<br/>
+Driver info: driver.version: unknown</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)<br />
+              org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)<br />
+              com.automation.utility.Utility.selectByValueFromDropDown(Utility.java:166)<br />
+              com.automation.pages.CreateAccountPage.setMonth(CreateAccountPage.java:154)<br />
+              com.automation.testsuite.CreateAccountPageTest.verifyThatUserShouldCreateAccountSuccessfully(CreateAccountPageTest.java:40)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1259)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.WomenCategoryPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    90.054s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Blouse", "2", "M", "White"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on woman top Menu[[ChromeDriver: chrome on WINDOWS (5f0b4aeeeca7299a926e43272099d310)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Clicking on Blouse [[ChromeDriver: chrome on WINDOWS (5f0b4aeeeca7299a926e43272099d310)] -&gt; xpath: //body/div[@id=&apos;page&apos;]/div[2]/div[1]/div[3]/div[2]/ul[1]/li[2]/div[1]/div[2]/h5[1]/a[1]]<br />
+                                Clicking on blouse [[ChromeDriver: chrome on WINDOWS (5f0b4aeeeca7299a926e43272099d310)] -&gt; xpath: //body/div[@id=&apos;page&apos;]/div[2]/div[1]/div[3]/div[2]/ul[1]/li[2]/div[1]/div[2]/h5[1]/a[1]]&lt;br&gt;<br />
+                                Clicking on clear Qty [[ChromeDriver: chrome on WINDOWS (5f0b4aeeeca7299a926e43272099d310)] -&gt; xpath: //input[@id=&apos;quantity_wanted&apos;]]&lt;br&gt;<br />
+                                Enter text 2 to email field [[ChromeDriver: chrome on WINDOWS (5f0b4aeeeca7299a926e43272099d310)] -&gt; xpath: //select[@id=&apos;group_1&apos;]]&lt;br&gt;<br />
+                                Selecting text M from dropdown Proxy element for: DefaultElementLocator &apos;by id or name &quot;size&quot;&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;size&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-TMPB3MR&apos;, ip: &apos;192.168.1.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [5f0b4aeeeca7299a926e43272099d310, findElement {using=css selector, value=*[name=&apos;size&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\nihar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53132/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 5f0b4aeeeca7299a926e43272099d310</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)<br />
+              org.openqa.selenium.By$ByName.findElement(By.java:238)<br />
+              org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.getTagName(Unknown Source)<br />
+              org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)<br />
+              com.automation.utility.Utility.selectByVisibleTextFromDropDown(Utility.java:155)<br />
+              com.automation.pages.ProductPage.setSize(ProductPage.java:71)<br />
+              com.automation.testsuite.WomenCategoryPageTest.verifyUserShouldAddProductToTheCartSuccessfully(WomenCategoryPageTest.java:47)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1259)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    44.817s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" Printed Summer Dress with Price $28.98", "2", "M", "Blue"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on woman top Menu[[ChromeDriver: chrome on WINDOWS (2bd9c96ab37e52d1b036240f47d3ea88)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Clicking on clear Qty Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;quantity_wanted&apos;]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;quantity_wanted&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-TMPB3MR&apos;, ip: &apos;192.168.1.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2bd9c96ab37e52d1b036240f47d3ea88, findElement {using=xpath, value=//input[@id=&apos;quantity_wanted&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\nihar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53324/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2bd9c96ab37e52d1b036240f47d3ea88</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.clear(Unknown Source)<br />
+              com.automation.utility.Utility.clearquantity(Utility.java:83)<br />
+              com.automation.pages.ProductPage.makeclearQty(ProductPage.java:61)<br />
+              com.automation.testsuite.WomenCategoryPageTest.verifyUserShouldAddProductToTheCartSuccessfully(WomenCategoryPageTest.java:45)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1259)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    44.750s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" Printed Chiffon Dress", "4", "S", "Green"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on woman top Menu[[ChromeDriver: chrome on WINDOWS (713105245ed0e866084e5794c2bf959e)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Clicking on clear Qty Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;quantity_wanted&apos;]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;quantity_wanted&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-TMPB3MR&apos;, ip: &apos;192.168.1.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [713105245ed0e866084e5794c2bf959e, findElement {using=xpath, value=//input[@id=&apos;quantity_wanted&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\nihar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53274/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 713105245ed0e866084e5794c2bf959e</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.clear(Unknown Source)<br />
+              com.automation.utility.Utility.clearquantity(Utility.java:83)<br />
+              com.automation.pages.ProductPage.makeclearQty(ProductPage.java:61)<br />
+              com.automation.testsuite.WomenCategoryPageTest.verifyUserShouldAddProductToTheCartSuccessfully(WomenCategoryPageTest.java:45)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1259)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    66.061s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Printed Dress", "3", "L", "Orange"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on woman top Menu[[ChromeDriver: chrome on WINDOWS (29716d5ba7ee97e48324cd620f7400f8)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Clicking on Printed Dress Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Printed Dress&apos;)]&apos;<br />
+                                Clicking on printedDress Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Printed Dress&apos;)]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Printed Dress&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-TMPB3MR&apos;, ip: &apos;192.168.1.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_302&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [29716d5ba7ee97e48324cd620f7400f8, findElement {using=xpath, value=//h1[contains(text(),&apos;Printed Dress&apos;)]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\nihar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53207/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 29716d5ba7ee97e48324cd620f7400f8</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.click(Unknown Source)<br />
+              com.automation.utility.Utility.clickOnElement(Utility.java:57)<br />
+              com.automation.pages.ProductPage.selectProduct(ProductPage.java:129)<br />
+              com.automation.testsuite.WomenCategoryPageTest.verifyUserShouldAddProductToTheCartSuccessfully(WomenCategoryPageTest.java:44)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1259)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.SignPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  erifyThatUserShouldLogOutSuccessFully
+      </td>
+  <td class="duration">
+    8.135s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email nehamittal@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Enter password prime123 to email field [[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                Clicking on signout [[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (72c88566346e9bc6df10bd6b1db986f2)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  userShouldNavigateToSignInPageSuccessFully
+      </td>
+  <td class="duration">
+    3.023s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (f1f2c32e5074f44556e28083672dc7dd)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                getting create a Authentification text from [[ChromeDriver: chrome on WINDOWS (f1f2c32e5074f44556e28083672dc7dd)] -&gt; xpath: //h1[contains(text(),&apos;Authentication&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLogInSuccessFullyWithValidCredentials
+      </td>
+  <td class="duration">
+    16.368s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email nehamittal@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Enter password prime123 to email field [[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                                Clicking on signout [[ChromeDriver: chrome on WINDOWS (452333c0178c77637661b2d0ed28ca6f)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    9.676s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "123456", "An email address required."</span><br />
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (dc50265dccbd67a41360fb93aca25daf)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email&nbsp; to email field [[ChromeDriver: chrome on WINDOWS (dc50265dccbd67a41360fb93aca25daf)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Clicking on username &lt;br&gt;<br />
+                                Enter password 123456 to email field [[ChromeDriver: chrome on WINDOWS (dc50265dccbd67a41360fb93aca25daf)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on password 123456&lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (dc50265dccbd67a41360fb93aca25daf)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (dc50265dccbd67a41360fb93aca25daf)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    9.863s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"abcd@gmail.com", "123456", " Authentication failed."</span><br />
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (a0744472d8829cad5269a7b9ad3f6258)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email abcd@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (a0744472d8829cad5269a7b9ad3f6258)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Clicking on username abcd@gmail.com&lt;br&gt;<br />
+                                Enter password 123456 to email field [[ChromeDriver: chrome on WINDOWS (a0744472d8829cad5269a7b9ad3f6258)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on password 123456&lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (a0744472d8829cad5269a7b9ad3f6258)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (a0744472d8829cad5269a7b9ad3f6258)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    10.135s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" adfdfgfg ", "123456", "Invalid email address"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (30486494aab4eb54ee7f50afb2d6912e)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email&nbsp; adfdfgfg&nbsp; to email field [[ChromeDriver: chrome on WINDOWS (30486494aab4eb54ee7f50afb2d6912e)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Clicking on username&nbsp; adfdfgfg &lt;br&gt;<br />
+                                Enter password 123456 to email field [[ChromeDriver: chrome on WINDOWS (30486494aab4eb54ee7f50afb2d6912e)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on password 123456&lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (30486494aab4eb54ee7f50afb2d6912e)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (30486494aab4eb54ee7f50afb2d6912e)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    10.042s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"abcd@gmail.com", "", "Password is required"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (54d222acba7f22cc04544dd0f74d1c04)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Enter email abcd@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (54d222acba7f22cc04544dd0f74d1c04)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Clicking on username abcd@gmail.com&lt;br&gt;<br />
+                                Enter password&nbsp; to email field [[ChromeDriver: chrome on WINDOWS (54d222acba7f22cc04544dd0f74d1c04)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on password &lt;br&gt;<br />
+                                Clicking on signinclick [[ChromeDriver: chrome on WINDOWS (54d222acba7f22cc04544dd0f74d1c04)] -&gt; xpath: //body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/p[2]/button[1]/span[1]]&lt;br&gt;<br />
+                                getting signout&nbsp; text from [[ChromeDriver: chrome on WINDOWS (54d222acba7f22cc04544dd0f74d1c04)] -&gt; xpath: //header/div[2]/div[1]/div[1]/nav[1]/div[2]/a[1]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.WomenCategoryPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToWomenCategoryPageSuccessfully
+      </td>
+  <td class="duration">
+    7.587s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on sign in click[[ChromeDriver: chrome on WINDOWS (7d7732d7b01e01bc41559221b37d6aec)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Clicking on woman top Menu[[ChromeDriver: chrome on WINDOWS (7d7732d7b01e01bc41559221b37d6aec)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
